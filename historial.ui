@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>966</width>
+    <height>691</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-color:#268cff;
+}
+QPushButton{
+background-color:blue;
+font-size:16px;
+color:white;
+border: 2px solid black;
+border-radius:15px;
+}
+QPushButton:hover{
+background-color:red;
+font-size:16px;
+color:white;
+border: 2px solid black;
+border-radius:15px;
+}
+QPushButton:pressed{
+background-color:green;
+font-size:16px;
+color:white;
+border: 2px solid black;
+border-radius:15px;
+}
+QLabel{
+font-size:38px;
+
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Maquina</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MAQUINA">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>30</y>
+     <width>431</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:red</string>
+   </property>
+   <property name="text">
+    <string>Maquina</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="TABLA">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>911</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="selectionMode">
+    <enum>QAbstractItemView::SingleSelection</enum>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <column>
+    <property name="text">
+     <string>LOTE</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>ARTICULO</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>TALLE</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>TIPOPIEZA</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>CANTIDADES</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>HILADO</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>FECHA</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>TEJEDOR</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>90</y>
+     <width>961</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>989</width>
+    <height>764</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QMainWindow{
+background-image:url(LOGO.png);
+background-repeat:no-repeat;
+background-position: center;
+background-color:#268cff;
+}
+QPushButton{
+background-color:blue;
+font-size:24px;
+color:white;
+border: 2px solid black;
+border-radius:25px;
+}
+QPushButton:hover{
+background-color:red;
+font-size:24px;
+color:black;
+border: 2px solid black;
+border-radius:25px;
+}
+QPushButton:pressed{
+background-color:green;
+font-size:24px;
+color:black;
+border: 2px solid black;
+border-radius:25px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>911</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>MAQUINAS</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>400</y>
+       <width>361</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>GALGA 5</string>
+     </property>
+     <widget class="QPushButton" name="cmsg5">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>40</y>
+        <width>181</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CMS 330.6 G5</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>461</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>GALGA 8</string>
+     </property>
+     <widget class="QPushButton" name="tc433">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>50</y>
+        <width>181</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CMS TC433</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bms">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>181</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>BMS 52 KI</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>861</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>GALGA 12</string>
+     </property>
+     <widget class="QPushButton" name="cms12">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>181</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CMS 330.6 G12</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="tc4">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>40</y>
+        <width>181</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CMS TC4</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cms340">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>40</y>
+        <width>181</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>CMS 340.6L</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hp822">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>40</y>
+        <width>181</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>OKC 822 HP</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="FECHA">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>10</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:#01ff4f;
+background-color:#5f5f5f;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>10</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:#ff2c2c;
+background-color:#5f5f5f;</string>
+    </property>
+    <property name="text">
+     <string>  Fecha y Hora</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>989</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1078</width>
+    <height>712</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-image:url(LOGO.png);
+background-repeat:no-repeat;
+background-position: center;
+background-color:#268cff;
+}
+QPushButton{
+background-color:blue;
+font-size:18px;
+color:white;
+border: 2px solid black;
+border-radius:25px;
+}
+QPushButton:hover{
+background-color:red;
+font-size:18px;
+color:black;
+border: 2px solid black;
+border-radius:25px;
+}
+QPushButton:pressed{
+background-color:green;
+font-size:18px;
+color:black;
+border: 2px solid black;
+border-radius:25px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>10</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:red;
+background-color:#5f5f5f;</string>
+   </property>
+   <property name="text">
+    <string>MAQUINA</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Maquina">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>10</y>
+     <width>231</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Reference Sans Serif</family>
+     <pointsize>20</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#01ff4f;
+background-color:#5f5f5f;</string>
+   </property>
+   <property name="text">
+    <string>MAQUINA</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>651</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>TEJIDO ACTUAL</string>
+   </property>
+   <widget class="QTableWidget" name="ACTUAL">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>631</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <column>
+     <property name="text">
+      <string>LOTE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ARTICULO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TALLE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TIPO DE PIEZA</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CANTIDADES</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TIPO HILADO</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>360</y>
+     <width>651</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>TEJIDO SIGUIENTE</string>
+   </property>
+   <widget class="QTableWidget" name="SIGUIENTE">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>631</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <column>
+     <property name="text">
+      <string>LOTE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ARTICULO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TALLE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TIPO DE PIEZA</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CANTIDADES</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TIPO HILADO</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="COMPLETADO">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>90</y>
+     <width>131</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PASAR A 
+COMPLETADO</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PASAR_ACTUAL">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>290</y>
+     <width>181</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PASAR A ACTUAL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ELIMINAR">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>500</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ELIMINAR</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="NUEVO">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>420</y>
+     <width>111</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>NUEVO</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="HISTORIAL">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>180</y>
+     <width>131</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HISTORIAL 
+COMPLETADO</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>80</y>
+     <width>241</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>ANOTACIONES</string>
+   </property>
+   <widget class="QTextEdit" name="ANOTACIONES">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>221</width>
+      <height>171</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="GUARDAR_ANOTACIONES">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>290</y>
+     <width>141</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>GUARDAR
+ ANOTACIONES</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PASAR_SIGUIENTE">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>290</y>
+     <width>181</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PASAR A SIGUIENTE</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
